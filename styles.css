@@ -1,0 +1,108 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+/* main CSS */
+
+@font-face {
+    font-family: odin-font;
+    src: url(fonts/Norse-Bold.otf);
+  }
+
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica,
+     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    
+}
+
+.container {
+    height: 100vh;
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    background-color: rgb(241, 241, 241);
+}
+
+.image-section {
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.image-section > .banner {
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 180px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: odin-font, system-ui;
+    font-size: calc(1.2rem + 3vw);
+    
+    
+}
+
+.banner > img {
+    height: 80%;
+    width: auto;
+}
+
+.image-section > .image-credits {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+a {
+    color: inherit;
+}
+
+
+.text-section {
+    width: 65%;
+}
